@@ -24,7 +24,7 @@ export default function Home() {
         {[1, 2, 3, 4].map((demo) => (
           <div key={demo} className="bg-white rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
             <img src={`/images/demo-${demo}.svg`} alt={`Demo ${demo}`} className="w-full h-40 object-cover rounded-t-lg" />
-            <div className="pt-10 p-2">
+            <div className="pt-20 p-2">
               <h3 className="font-bold text-lg mb-2">Demo {demo}</h3>
               <p className="text-gray-600">Short description of the demo...</p>
             </div>
