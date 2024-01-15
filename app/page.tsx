@@ -34,7 +34,7 @@ export default function Home() {
 
       {/* 'See Full Catalog' Button */}
       <div className="text-center my-4 md:my-8">
-        <button className="bg-white text-blue-600 font-bold py-2 px-4 rounded border-2 border-blue-600 hover:bg-blue-600 hover:text-white hover:scale-105 transition-transform duration-300">
+        <button className="ml-6 white text-blue-500 px-4 py-2 rounded transition duration-300 transform hover:scale-105 hover:bg-blue-500 hover:text-white border border-blue-500">
           See Full Catalog
         </button>
       </div>
@@ -42,21 +42,3 @@ export default function Home() {
     </>
   )
 }
-
-
-
-
-
-
-
-
-/* 
-
-1 - Make dropdown menu responsive 
-
-2 - Make see full catalog button and Get Started button the same animation as get quote button 
-
-3. Addd more content 
-
-
-*/
