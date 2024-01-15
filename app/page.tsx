@@ -66,19 +66,19 @@ export default function Home() {
       </div>
 
       {/* Services Section */}
-      <div className="w-full mt-24 flex flex-col md:flex-row items-center">
-        <div className="md:w-3/5 flex justify-center">
-          {/* Container for Blue Boxes with 50% Width and Increased Spacing */}
-          <div className="space-y-12 w-3/4"> {/* Increased vertical spacing and width set to 50% */}
+      <div className="w-full mt-8 md:mt-24 flex flex-col md:flex-row items-center">
+        <div className="w-full md:w-3/5 flex justify-center mb-8 md:mb-0">
+          {/* Responsive Container for Blue Boxes */}
+          <div className="space-y-4 md:space-y-12 w-3/4 md:w-3/4 mx-auto"> {/* Adjusted for mobile */}
             <ServiceBox title="Website Design" description="Professional and creative website design tailored to your business needs." />
             <ServiceBox title="Website Development" description="Robust and scalable web development solutions using the latest technologies." />
             <ServiceBox title="Hosting" description="Reliable and secure web hosting services for uninterrupted online presence." />
             <ServiceBox title="Domains" description="Find and register the perfect domain name for your business." />
           </div>
         </div>
-        <div className="md:w-2/5 flex justify-end">
-          {/* Right-side Image */}
-          <img src="/images/laptop.svg" alt="Right Section Image" className="w-full h-auto md:w-auto md:max-w-full" />
+        <div className="w-full md:w-2/5">
+          {/* Responsive Image */}
+          <img src="/images/laptop.svg" alt="Right Section Image" className="w-full h-auto" />
         </div>
       </div>
 
