@@ -11,7 +11,7 @@ export default function Home() {
         <div>
           <h1 className="text-5xl font-bold mb-4">Welcome to DEK Innovations</h1>
           <p className="text-xl mb-6">Innovative Web Solutions for Your Business</p>
-          <button className="bg-white text-blue-600 font-bold py-2 px-4 rounded">
+          <button className="bg-white text-blue-600 font-bold py-2 px-4 rounded transition duration-300 transform hover:scale-105">
             Get Started
           </button>
         </div>
@@ -42,3 +42,21 @@ export default function Home() {
     </>
   )
 }
+
+
+
+
+
+
+
+
+/* 
+
+1 - Make dropdown menu responsive 
+
+2 - Make see full catalog button and Get Started button the same animation as get quote button 
+
+3. Addd more content 
+
+
+*/
