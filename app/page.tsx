@@ -68,7 +68,7 @@ export default function Home() {
       {/* Services Section */}
       <div className="w-full mt-8 md:mt-24 flex flex-col md:flex-row items-center">
         <div className="w-full md:w-3/5 flex justify-center mb-8 md:mb-0">
-          <div className="space-y-4 md:space-y-12 w-3/4 md:w-3/4 mx-auto"> {/* Adjusted for mobile */}
+          <div className="space-y-4 md:space-y-12 w-3/4 md:w-3/4 mx-auto">
             <ServiceBox title="Website Design" description="Professional and creative website design tailored to your business needs." />
             <ServiceBox title="Website Development" description="Robust and scalable web development solutions using the latest technologies." />
             <ServiceBox title="Hosting" description="Reliable and secure web hosting services for uninterrupted online presence." />
@@ -81,9 +81,9 @@ export default function Home() {
       </div>
 
       {/* About Us Section with Added Top Margin */}
-      <div className="bg-gradient-to-r from-blue-400 to-blue-600 w-full py-12 md:py-40 relative mt-80"> {/* Adjust margin as needed */}
+      <div className="bg-gradient-to-r from-blue-400 to-blue-600 w-full py-12 md:py-40 relative mt-80"> 
         {/* White Box Floating */}
-        <div className="bg-white p-6 md:p-12 rounded-lg shadow-2xl bobbing absolute -top-16 md:-top-24 -bottom-16 md:-bottom-24 left-4 md:left-12 z-10 transform w-3/4 md:w-1/4">
+        <div className="bg-white p-6 md:p-12 rounded-lg shadow-2xl bobbing absolute -top-16 md:-top-24 -bottom-16 md:-bottom-24 left-4 md:left-60 z-10 transform w-3/4 md:w-1/4">
           <h2 className="text-xl md:text-3xl font-bold mb-4">Why Choose Us?</h2>
           <p>Your one-stop shop for domains, hosting, and custom website development...</p>
           {/* Add more content about choosing custom websites over WordPress/Wix */}
