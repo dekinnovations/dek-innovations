@@ -88,14 +88,14 @@ export default function Home() {
       </div>
 
       {/* About Us Section with Added Top Margin */}
-      <div className="bg-gradient-to-r from-blue-400 to-blue-600 w-full py-12 md:py-40 relative mt-80"> 
-        {/* White Box Floating */}
-        <div className="bg-white p-6 md:p-12 rounded-lg shadow-2xl bobbing absolute -top-16 md:-top-24 -bottom-16 md:-bottom-24 left-4 md:left-60 z-10 transform w-3/4 md:w-1/4">
+      <div className="bg-gradient-to-r from-blue-400 to-blue-600 w-full py-12 md:py-40 relative mt-80">
+        <div className="bg-white p-6 md:p-12 rounded-lg shadow-2xl bobbing absolute -top-16 md:-top-24 -bottom-16 md:-bottom-24 right-4 md:right-60 z-10 transform w-3/4 md:w-1/4">
           <h2 className="text-xl md:text-3xl font-bold mb-4">Why Choose Us?</h2>
           <p>Your one-stop shop for domains, hosting, and custom website development...</p>
           {/* Add more content about choosing custom websites over WordPress/Wix */}
         </div>
       </div>
+
 
 
 
