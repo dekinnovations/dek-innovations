@@ -18,7 +18,13 @@ const ServiceBox: React.FC<IServiceBoxProps> = ({ title, description }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <h2 className="text-xl font-bold">{title}</h2>
-      <div className={`transition-all duration-500 overflow-hidden ${isHovered ? 'max-h-40' : 'max-h-0'}`}>
+      <div 
+        className={`transition-all duration-500 overflow-hidden transform ${isHovered ? 'opacity-100 visible' : 'opacity-0 invisible'} max-h-40`}
+        style={{
+          transition: 'opacity 0.5s, transform 0.5s',
+          transform: isHovered ? 'translateY(0)' : 'translateY(-20px)'
+        }}
+      >
         <p className="pt-2 text-white p-4 rounded-lg shadow-lg">
           {description}
         </p>
@@ -26,6 +32,7 @@ const ServiceBox: React.FC<IServiceBoxProps> = ({ title, description }) => {
     </div>
   );
 };
+
 
 export default function Home() {
   return (
