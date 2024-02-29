@@ -2,37 +2,7 @@
 
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
-
-interface IServiceBoxProps {
-  title: string;
-  description: string;
-}
-
-const ServiceBox: React.FC<IServiceBoxProps> = ({ title, description }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  return (
-    <div 
-      className="bg-gradient-to-r from-blue-600 to-blue-400 text-white p-4 rounded-lg cursor-pointer transition-all"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <h2 className="text-xl font-bold">{title}</h2>
-      <div 
-        className={`transition-all duration-500 overflow-hidden transform ${isHovered ? 'opacity-100 visible' : 'opacity-0 invisible'} max-h-40`}
-        style={{
-          transition: 'opacity 0.5s, transform 0.5s',
-          transform: isHovered ? 'translateY(0)' : 'translateY(-20px)'
-        }}
-      >
-        <p className="pt-2 text-white p-4 rounded-lg shadow-lg">
-          {description}
-        </p>
-      </div>
-    </div>
-  );
-};
-
+import ServiceBox from '@/components/SeerviceBox';
 
 export default function Home() {
   return (
@@ -72,20 +42,18 @@ export default function Home() {
         </button>
       </div>
 
-      {/* Services Section */}
-      <div className="w-full mt-8 md:mt-24 flex flex-col md:flex-row items-center">
-        <div className="w-full md:w-3/5 flex justify-center mb-8 md:mb-0">
-          <div className="space-y-4 md:space-y-12 w-3/4 md:w-3/4 mx-auto">
+       {/* Services Section */}
+        <div className="w-full mt-8 md:mt-40 flex flex-col md:flex-row items-center justify-center pl-4 md:pl-8">
+          <div className="space-y-4 md:space-y-12 w-full md:w-3/4 mx-auto">
             <ServiceBox title="Website Design" description="Professional and creative website design tailored to your business needs." />
             <ServiceBox title="Website Development" description="Robust and scalable web development solutions using the latest technologies." />
             <ServiceBox title="Hosting" description="Reliable and secure web hosting services for uninterrupted online presence." />
             <ServiceBox title="Domains" description="Find and register the perfect domain name for your business." />
           </div>
+          <div className="w-full md:w-2/5">
+            <img src="/images/laptop.svg" alt="Right Section Image" className="w-full h-auto" />
+          </div>
         </div>
-        <div className="w-full md:w-2/5">
-          <img src="/images/laptop.svg" alt="Right Section Image" className="w-full h-auto" />
-        </div>
-      </div>
 
       {/* About Us Section with Added Top Margin */}
       <div className="bg-gradient-to-r from-blue-400 to-blue-600 w-full py-12 md:py-40 relative mt-80">
