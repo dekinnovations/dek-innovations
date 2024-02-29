@@ -13,7 +13,7 @@ export default function Home() {
       <div className="hero bg-gradient-to-r from-blue-400 to-blue-600 flex flex-col sm:flex-row justify-around items-center p-4 sm:p-12 text-white">
         <div>
           <h1 className="text-5xl font-bold mb-4">Welcome to DEK Innovations</h1>
-          <p className="text-xl mb-6">Innovative Web Solutions for Your Business</p>
+          <p className="text-xl mb-6">Innovative Software Development for Your Business</p>
           <button className="bg-white text-blue-600 font-bold py-2 px-4 rounded transition duration-300 transform hover:scale-105">
             Get Started
           </button>
