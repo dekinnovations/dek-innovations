@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
-import ServiceBox from '@/components/SeerviceBox';
+import ServiceBox from '@/components/ServiceBox';
 import { motion } from 'framer-motion';
 
 export default function Home() {
