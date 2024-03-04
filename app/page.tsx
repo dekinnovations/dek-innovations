@@ -117,8 +117,8 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 space-y-4">
               <motion.h2
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.5 }}
                 className="text-3xl md:text-4xl font-bold text-white"
