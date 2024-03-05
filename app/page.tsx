@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
-import ServiceBox from '@/components/ServiceBox';
+import Navbar from '../components/navbar';
+import ServiceBox from '../components/serviceBox';
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -106,8 +106,7 @@ export default function Home() {
               <motion.img 
                 src="/images/iPad.svg"
                 alt="About Us"
-                className="w-full h-auto transform transition-transform hover:scale-105"
-                whileHover={{ scale: 1.05 }}
+                className="w-full h-auto"
               />
             </div>
             <div className="md:w-1/2 space-y-4">
@@ -168,9 +167,9 @@ export default function Home() {
             <p className="text-md mt-2">Innovating the future, one project at a time.</p>
           </div>
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-blue-200 transition-colors duration-300">Home</a>
+            <a href="/" className="hover:text-blue-200 transition-colors duration-300">Home</a>
             <a href="#" className="hover:text-blue-200 transition-colors duration-300">Services</a>
-            <a href="#" className="hover:text-blue-200 transition-colors duration-300">About</a>
+            <a href="/about" className="hover:text-blue-200 transition-colors duration-300">About</a>
             <a href="#" className="hover:text-blue-200 transition-colors duration-300">Contact</a>
           </div>
         </div>
