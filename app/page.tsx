@@ -92,7 +92,7 @@ export default function Home() {
         </div>
       </motion.div>
 
-      {/* About Us Section with Added Top Margin */}
+      {/* About Us Section */}
       <div className="bg-gradient-to-r from-blue-400 to-blue-600 w-full py-12 md:py-24 relative mt-80">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

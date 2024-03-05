@@ -108,7 +108,7 @@ export default function About() {
                 />
             </div>
             <div className="mt-6">
-                <h3 className="text-2xl font-bold">Your Name</h3>
+                <h3 className="text-2xl font-bold">Dylan E. Keller</h3>
                 <p className="text-lg text-gray-600">Founder & Lead Developer</p>
                 <p className="mt-4 max-w-xl mx-auto">
                 Briefly introduce yourself here. Highlight your experience, vision for the company, and any unique insights you bring to your role. This personal touch can help visitors connect with your brand on a more personal level.
@@ -130,15 +130,15 @@ export default function About() {
           Our Values
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <motion.div variants={slideInLeftVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="p-6 shadow-lg rounded-lg">
+          <motion.div variants={slideInLeftVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="p-6 shadow-lg rounded-lg bg-white">
             <h3 className="font-bold text-xl mb-3">Innovation</h3>
             <p>We embrace innovation to tackle complex challenges and deliver groundbreaking solutions.</p>
           </motion.div>
-          <motion.div variants={slideInLeftVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="p-6 shadow-lg rounded-lg">
+          <motion.div variants={slideInLeftVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="p-6 shadow-lg rounded-lg bg-white">
             <h3 className="font-bold text-xl mb-3">Quality</h3>
             <p>Commitment to the highest quality is at the core of everything we do, ensuring excellence in our deliverables.</p>
           </motion.div>
-          <motion.div variants={slideInLeftVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="p-6 shadow-lg rounded-lg">
+          <motion.div variants={slideInLeftVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="p-6 shadow-lg rounded-lg bg-white">
             <h3 className="font-bold text-xl mb-3">Integrity</h3>
             <p>We uphold transparency, ethics, and honesty in our work, fostering trust with our clients and team members.</p>
           </motion.div>
