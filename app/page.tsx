@@ -76,7 +76,7 @@ export default function Home() {
           </motion.div>
         </div>
 
-        <div className="w-full md:w-1/2 px-4 md:px-12 py-8 md:py-6 mt-4 md:mt-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg text-center md:text-left">
+        <div className="w-full md:w-1/2 px-4 md:px-12 py-8 md:py-6 mt-4 md:mt-0 bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Strategic Social Media Marketing</h2>
           <p className="text-lg text-white">
             Dive deep into the realm of social media with our strategic marketing services, designed to elevate your brand's online presence. Our approach combines creativity with analytics to tailor campaigns that resonate with your audience and align with your business goals. Harness the power of social media to build community, foster brand loyalty, and drive meaningful engagement.
@@ -106,12 +106,13 @@ export default function Home() {
             Whether you're looking to launch a new website, redesign an existing one, or develop a powerful web application, our comprehensive services cover all your needs. From initial consultation to final deployment, we ensure a seamless process that aligns with your strategic goals, delivering a product that not only meets but exceeds your expectations.
           </p>
           <Link href="/learnMoreWebDevelopment">
-            <button className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transform transition duration-400 hover:bg-blue-500 mt-10">Learn More</button>
+            <button className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transform transition duration-400 hover:bg-blue-600 mt-10">Learn More</button>
           </Link>
         </div>
-        <div className="w-full md:w-1/2 flex justify-end mt-8 md:mt-0 pr-4 md:pr-8">
-          <img src="/images/laptop.svg" alt="Web Development" className="h-auto w-full lg:max-w-2xl" style={{ maxWidth: '100%' }} />
+        <div className="w-full md:w-1/2 flex justify-end mt-8 md:mt-0">
+          <img src="/images/laptop.svg" alt="Web Development" className="h-auto w-full lg:max-w-2xl" style={{ maxWidth: '100%', margin: 0, padding: 0 }} />
         </div>
+
       </motion.div>
 
       {/* About Us Section */}
