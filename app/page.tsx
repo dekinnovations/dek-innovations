@@ -76,7 +76,7 @@ export default function Home() {
           </motion.div>
         </div>
 
-        <div className="w-full md:w-1/2 px-4 md:px-12 py-8 md:py-6 mt-4 md:mt-0 bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg text-center md:text-left">
+        <div className="w-full md:w-1/2 px-4 md:px-12 py-20 md:py-20 mt-4 md:mt-0 bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Strategic Social Media Marketing</h2>
           <p className="text-lg text-white">
             Dive deep into the realm of social media with our strategic marketing services, designed to elevate your brand's online presence. Our approach combines creativity with analytics to tailor campaigns that resonate with your audience and align with your business goals. Harness the power of social media to build community, foster brand loyalty, and drive meaningful engagement.
