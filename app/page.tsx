@@ -65,28 +65,52 @@ export default function Home() {
           </div>
         ))}
       </div>
-
-      {/* Services Section */}
-      <motion.div 
-        className="flex flex-col md:flex-row items-center justify-between w-full mt-8 md:mt-40"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        <div className="w-full md:flex-1 space-y-4 px-4 md:px-0">
-          {servicesData.slice(0, 4).map((service) => (
-            <motion.div key={service.id} variants={itemVariants}>
-              <ServiceBox 
-                title={service.title} 
-                description={service.description} 
-              />
-            </motion.div>
-          ))}
+      
+      {/* SMMA */}
+      <motion.div className="flex flex-col md:flex-row items-center justify-between w-full mt-16 md:mt-60 px-4 md:px-8">
+        <div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0 p-4">
+          <motion.div 
+            className="w-full md:w-3/4 lg:max-w-2xl rounded-lg overflow-hidden transform transition-all duration-500 ease-in-out md:mr-20"
+          >
+            <img src="/images/SMMA.svg" alt="Social Media Marketing" className="object-cover w-full h-full" />
+          </motion.div>
         </div>
 
-        <div className="w-full md:w-2/5 flex justify-end mt-8 md:mt-0">
-          <img src="/images/laptop.svg" alt="Laptop Section Image" className="h-auto md:w-full lg:max-w-2xl" style={{ maxWidth: '100%' }} />
+        <div className="w-full md:w-1/2 px-4 md:px-12 py-8 md:py-6 mt-4 md:mt-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg text-center md:text-left">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Strategic Social Media Marketing</h2>
+          <p className="text-lg text-white">
+            Dive deep into the realm of social media with our strategic marketing services, designed to elevate your brand's online presence. Our approach combines creativity with analytics to tailor campaigns that resonate with your audience and align with your business goals. Harness the power of social media to build community, foster brand loyalty, and drive meaningful engagement.
+            <br /><br />
+            Benefit from our expertise in creating content that captivates, from eye-catching graphics to compelling narratives. Our targeted strategies are crafted to enhance your visibility, increase engagement rates, and generate measurable results. Let us transform your social media channels into powerful tools for business growth, customer engagement, and brand amplification.
+          </p>
+          <Link href="/SMMA">
+            <motion.button
+              whileHover={{ scale: 1.1, backgroundColor: '#ffffff', color: '#007bff' }}
+              className="text-blue-700 font-bold py-2 px-6 rounded-lg transform transition duration-400 bg-white mt-10 hover:bg-gray-100"
+            >
+              Learn More
+            </motion.button>
+          </Link>
+        </div>
+      </motion.div>
+
+
+
+      {/* Web Apps and Websites Section */}
+      <motion.div className="flex flex-col md:flex-row items-center justify-between w-full mt-16 md:mt-60">
+        <div className="w-full md:w-1/2 space-y-6 px-8 md:px-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-600">Expert Web App and Website Development</h2>
+          <p className="text-lg text-gray-700">
+            Elevate your business with our cutting-edge web app and website development services. Our expert team specializes in creating responsive, high-performing, and visually captivating websites that are custom-tailored to your business objectives. With a focus on user experience, our bespoke solutions are designed to engage your audience, enhance your online presence, and drive your digital success.
+            <br /><br />
+            Whether you're looking to launch a new website, redesign an existing one, or develop a powerful web application, our comprehensive services cover all your needs. From initial consultation to final deployment, we ensure a seamless process that aligns with your strategic goals, delivering a product that not only meets but exceeds your expectations.
+          </p>
+          <Link href="/learnMoreWebDevelopment">
+            <button className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transform transition duration-400 hover:bg-blue-500 mt-10">Learn More</button>
+          </Link>
+        </div>
+        <div className="w-full md:w-1/2 flex justify-end mt-8 md:mt-0 pr-4 md:pr-8">
+          <img src="/images/laptop.svg" alt="Web Development" className="h-auto w-full lg:max-w-2xl" style={{ maxWidth: '100%' }} />
         </div>
       </motion.div>
 
