@@ -5,6 +5,7 @@ import Navbar from '@/components/navbar';
 import ServiceBox from '@/components/serviceBox';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import servicesData from '@/servicesData';
 
 export default function Home() {
 
@@ -65,33 +66,27 @@ export default function Home() {
         ))}
       </div>
 
-      {/* See Full Catalog' Button */}
-      <div className="text-center my-4 md:my-8">
-        <button className="ml-6 white text-blue-500 px-4 py-2 rounded transition duration-300 transform hover:scale-105 hover:bg-blue-500 hover:text-white border border-blue-500">
-          See Full Catalog
-        </button>
-      </div>
-
-       {/* Services Section */}
-       <motion.div 
-        className="w-full mt-8 md:mt-40 flex flex-col md:flex-row items-center justify-center pl-4 md:pl-8"
+      {/* Services Section */}
+      <motion.div 
+        className="flex flex-col md:flex-row items-center justify-between w-full mt-8 md:mt-40"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <div className="space-y-4 md:space-y-12 w-full md:w-3/4 mx-auto">
-          {['Website Design', 'Website Development', 'Hosting', 'Domains'].map((service, index) => (
-            <motion.div key={index} variants={itemVariants}>
+        <div className="w-full md:flex-1 space-y-4 px-4 md:px-0">
+          {servicesData.slice(0, 4).map((service) => (
+            <motion.div key={service.id} variants={itemVariants}>
               <ServiceBox 
-                title={service} 
-                description="Description for the service..." 
+                title={service.title} 
+                description={service.description} 
               />
             </motion.div>
           ))}
         </div>
-        <div className="w-full md:w-2/5">
-          <img src="/images/laptop.svg" alt="Laptop Section Image" className="w-full h-auto" />
+
+        <div className="w-full md:w-2/5 flex justify-end mt-8 md:mt-0">
+          <img src="/images/laptop.svg" alt="Laptop Section Image" className="h-auto md:w-full lg:max-w-2xl" style={{ maxWidth: '100%' }} />
         </div>
       </motion.div>
 

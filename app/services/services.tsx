@@ -3,29 +3,20 @@
 import React, { useState } from 'react';
 import Navbar from '../../components/navbar';
 import { motion } from 'framer-motion';
+import servicesData from '@/servicesData';
 
-// Define a type for your services
-type Service = {
+interface Service {
   id: number;
   title: string;
   description: string;
-};
+}
 
-export default function Services() {
+const Services: React.FC = () => {
   const [selectedService, setSelectedService] = useState<Service | null>(null);
 
-  const services: Service[] = [
-    { id: 1, title: 'Website Design', description: 'Detailed explanation of Website Design, focusing on creating visually appealing and user-friendly interfaces tailored to your brand.' },
-    { id: 2, title: 'Website Development', description: 'Comprehensive details on Website Development, emphasizing robust, scalable, and secure coding practices to bring your digital presence to life.' },
-    { id: 3, title: 'Hosting', description: 'All you need to know about our Hosting services, offering reliable, fast, and secure hosting solutions to ensure your website’s optimal performance.' },
-    { id: 4, title: 'Domain Name Management', description: 'Expertise in Domain Name Management, ensuring your online identity is distinctive, protected, and aligned with your brand values.' },
-    { id: 5, title: 'WordPress / Wix Design', description: 'Expertise in WordPress / Wix Design, offering customized, creative, and responsive designs that effectively communicate your brand and engage your audience.' },
-    { id: 6, title: 'SEO Optimization', description: 'Maximize your online visibility with our SEO Optimization service, enhancing your search engine rankings and driving targeted traffic to your website.' }
-  ];
-
   const handleServiceSelection = (id: number) => {
-    const service = services.find(service => service.id === id);
-    setSelectedService(service ?? null); // Use null coalescing operator to ensure the state is never undefined
+    const service = servicesData.find(service => service.id === id);
+    setSelectedService(service ?? null); // This will either set the service object or null
   };
 
   return (
@@ -54,14 +45,14 @@ export default function Services() {
 
       {/* Services List */}
       <div className="container mx-auto px-4 py-12 mt-52">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
-          {services.map((service) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {servicesData.map((service) => (
             <motion.div 
-              key={service.id} 
+              key={service.id}
               onClick={() => handleServiceSelection(service.id)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="cursor-pointer p-6 border rounded-lg shadow-lg hover:shadow-xl transition-all mb-20 "
+              className="cursor-pointer p-6 border rounded-lg shadow-lg hover:shadow-xl transition-all mb-20"
             >
               <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
               <p>{service.description.slice(0, 100)}...</p>
@@ -115,3 +106,5 @@ export default function Services() {
     </>
   );
 }
+
+export default Services;
