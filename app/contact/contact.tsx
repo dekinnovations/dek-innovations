@@ -34,7 +34,7 @@ export default function Contact() {
           animate="visible"
           className="text-xl max-w-2xl mb-40 text-center"
         >
-          We look forward to hearing from you.
+          Bring your idea to life. We look forward to hearing from you.
         </motion.p>
       </div>
 
