@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Navbar from '@/components/navbar';
 import ServiceBox from '@/components/serviceBox';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -41,9 +42,11 @@ export default function Home() {
         <div>
           <h1 className="text-5xl font-bold mb-4">Welcome to DEK Innovations</h1>
           <p className="text-xl mb-6">Innovative Software Development for Your Business</p>
-          <button className="bg-white text-blue-600 font-bold py-2 px-4 rounded transition duration-300 transform hover:scale-105">
-            Get A Quote
-          </button>
+          <Link href="/getQuote">
+            <button className="bg-white text-blue-600 font-bold py-2 px-4 rounded transition duration-300 transform hover:scale-105">
+              Get A Quote
+            </button>
+          </Link>
         </div>
         <img src="/images/hero.svg" alt="Laptop" className="w-full md:w-1/2 lg:w-1/3" />
       </div>

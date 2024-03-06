@@ -29,9 +29,11 @@ export default function Navbar() {
           <Link href="/about"><span className="link-container text-lg">About</span></Link>
           <Link href="/services"><span className="link-container text-lg">Services</span></Link>
           <Link href="/contact"><span className="link-container text-lg">Contact</span></Link>
-          <button className="ml-6 bg-blue-500 text-white px-4 py-2 rounded transition duration-300 transform hover:scale-105 hover:bg-white hover:text-blue-500 border border-blue-500">
-            Get a Quote
-          </button>
+          <Link href="/getQuote" className="ml-6">
+            <button className="bg-blue-500 text-white px-4 py-2 rounded transition duration-300 transform hover:scale-105 hover:bg-white hover:text-blue-500 border border-blue-500">
+              Get a Quote
+            </button>
+          </Link>
         </div>
 
         {/* Mobile menu sidebar */}
@@ -40,9 +42,11 @@ export default function Navbar() {
           <Link href="/about"><span className="block py-2 cursor-pointer">About</span></Link>
           <Link href="/services"><span className="block py-2 cursor-pointer">Services</span></Link>
           <Link href="/contact"><span className="block py-2 cursor-pointer">Contact</span></Link>
-          <button className="w-full bg-blue-500 text-white mt-4 py-2 rounded hover:bg-white hover:text-blue-500 border border-blue-500">
-            Get a Quote
-          </button>
+          <Link href="/getQuote" className="ml-6">
+            <button className="bg-blue-500 text-white px-4 py-2 rounded transition duration-300 transform hover:scale-105 hover:bg-white hover:text-blue-500 border border-blue-500">
+              Get a Quote
+            </button>
+          </Link>
         </div>
       </div>
     </nav>
