@@ -2,38 +2,10 @@
 
 import React, { useState } from 'react';
 import Navbar from '@/components/navbar';
-import ServiceBox from '@/components/serviceBox';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import servicesData from '@/servicesData';
 
 export default function Home() {
-
-  const textVariants = {
-    hidden: { opacity: 0, x: -100 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 1.0 }
-    },
-  };
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.5
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 1.2, ease: "easeOut" } }
-  };
-
   return (
     <>
       <Navbar />
@@ -72,28 +44,6 @@ export default function Home() {
           transition={{ duration: 0.7, delay: 0.6 }}
         />
       </motion.div>
-
-      {/* Card Container */}
-      <div className="container mx-auto px-4 mt-4 md:-mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {/* Individual Cards */}
-        {[1, 2, 3, 4].map((demo, index) => (
-          <motion.div
-            key={demo}
-            initial={{ opacity: 0, translateY: 50 }}
-            whileInView={{ opacity: 1, translateY: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="bg-white rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300"
-          >
-            <img src={`/images/demo-${demo}.svg`} alt={`Demo ${demo}`} className="w-full h-40 object-cover rounded-t-lg" />
-            <div className="pt-20 p-2">
-              <h3 className="font-bold text-lg mb-2">Demo {demo}</h3>
-              <p className="text-gray-600">Short description of the demo...</p>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-
       
       {/* SMMA */}
       <div className="flex flex-col md:flex-row items-center justify-between w-full mt-16 md:mt-60 px-4 md:px-8">
