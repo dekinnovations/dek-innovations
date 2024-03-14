@@ -9,12 +9,15 @@ interface AdditionalInfo {
   email: string;
   phone: string;
   businessName: string;
-  ideaName: string;
-  currentWebsite: string;
-  problems: string;
-  wants: string;
-  platform: string;
-  design: string;
+  ideaName?: string;
+  currentWebsite?: string;
+  currentFacebookPage?: string;
+  monthlyIncome?: string;
+  marketingStruggle?: string;
+  problems?: string;
+  wants?: string;
+  platform?: string;
+  design?: string;
 }
 
 export default function GetQuote() {
@@ -27,6 +30,9 @@ export default function GetQuote() {
     businessName: '',
     ideaName: '',
     currentWebsite: '',
+    currentFacebookPage: '',
+    monthlyIncome: '',
+    marketingStruggle: '',
     problems: '',
     wants: '',
     platform: '',
@@ -46,7 +52,6 @@ export default function GetQuote() {
     e.preventDefault();
     // Simulate sending data here, replace with your actual logic
 
-    // Reset the form fields
     setProjectType('');
     setBusinessStage('');
     setAdditionalInfo({
@@ -56,13 +61,15 @@ export default function GetQuote() {
       businessName: '',
       ideaName: '',
       currentWebsite: '',
+      currentFacebookPage: '',
+      monthlyIncome: '',
+      marketingStruggle: '',
       problems: '',
       wants: '',
       platform: '',
       design: '',
     });
 
-    // Show submission confirmation
     setSubmitted(true);
   };
 
@@ -93,9 +100,10 @@ export default function GetQuote() {
               <option value="">Select one</option>
               <option value="website">Website</option>
               <option value="webapp">Web Application</option>
+              <option value="socialMediaMarketing">Social Media Marketing</option>
             </select>
 
-            {projectType && (
+            {projectType && projectType !== 'socialMediaMarketing' && (
               <>
                 <label htmlFor="businessStage">Is this for a current business or a new idea?</label>
                 <select
@@ -159,6 +167,19 @@ export default function GetQuote() {
                 <input type="text" name="ideaName" placeholder="Idea Name" value={additionalInfo.ideaName} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
                 <textarea name="ideaDescription" placeholder="Describe your webapp idea" value={additionalInfo.ideaName} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
                 <input type="text" name="design" placeholder="Do you have a design or need one created?" value={additionalInfo.design} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
+              </>
+            )}
+
+            {projectType === 'socialMediaMarketing' && (
+              <>
+                <input type="text" name="name" placeholder="Your Name" value={additionalInfo.name} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
+                <input type="email" name="email" placeholder="Your Email" value={additionalInfo.email} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
+                <input type="tel" name="phone" placeholder="Your Phone Number" value={additionalInfo.phone} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
+                <input type="text" name="businessName" placeholder="Business Name" value={additionalInfo.businessName} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
+                <input type="text" name="currentWebsite" placeholder="Current Website URL (if any)" value={additionalInfo.currentWebsite} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
+                <input type="text" name="currentFacebookPage" placeholder="Current Facebook Page URL (if any)" value={additionalInfo.currentFacebookPage} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
+                <input type="text" name="monthlyIncome" placeholder="Rough Estimate of Current Monthly Income" value={additionalInfo.monthlyIncome} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
+                <textarea name="marketingStruggle" placeholder="Current Marketing Struggle" value={additionalInfo.marketingStruggle} onChange={handleInputChange} className="w-full h-32 px-4 py-2 border rounded-lg focus:outline-none"></textarea>
               </>
             )}
 
