@@ -46,7 +46,7 @@ export default function Home() {
       </motion.div>
       
       {/* SMMA */}
-      <div className="flex flex-col md:flex-row items-center justify-between w-full mt-16 md:mt-60 px-4 md:px-8">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full md:mt-40 px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -54,7 +54,7 @@ export default function Home() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0 p-4"
         >
-          <img src="/images/SMMA.svg" alt="Social Media Marketing" className="object-cover w-full h-full" />
+          <img src="/images/SMMA.svg" alt="Social Media Marketing" className="object-cover w-5/6 h-full pt-32" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -209,15 +209,11 @@ export default function Home() {
       </div>
 
      {/* Contact Me Section with adjustments */}
-     <div className="w-full mt-40 md:mt-80 flex flex-col md:flex-row items-center justify-center">
-      <div className="md:w-1/2 flex justify-center items-center ">
-        <img src="/images/phone.svg" alt="Phone Illustration" className="w-full max-w-lg h-auto" style={{ maxWidth: '70%', height: 'auto' }} />
-      </div>
-
-      <div className="md:w-1/2 flex flex-col justify-center items-start px-4 md:pl-8 mt-20 md:mt-0">
+     <div className="flex items-center justify-center w-full min-h-screen">
+      <div className="flex flex-col justify-center items-center px-4 md:pl-8">
         <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400 mb-6">Contact Us</h2>
         <p className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 mb-8">Got a project in mind? Let's discuss and make it happen.</p>
-        <div className="space-y-4">
+        <div className="space-y-4 w-full max-w-2lg">
           <input type="text" placeholder="Your Name" className="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-300" />
           <input type="email" placeholder="Your Email" className="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-300" />
           <textarea placeholder="Your Message" className="w-full h-32 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
@@ -227,7 +223,7 @@ export default function Home() {
     </div>
 
     {/* Footer Section */}
-    <footer className="bg-gradient-to-r from-blue-400 to-blue-600 text-white mt-40 py-8">
+    <footer className="bg-gradient-to-r from-blue-400 to-blue-600 text-white mt-10 py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
