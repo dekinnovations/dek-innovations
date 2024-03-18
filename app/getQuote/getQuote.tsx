@@ -196,7 +196,8 @@ export default function GetQuote() {
             <h2 className="text-xl font-bold">DEK Innovations</h2>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a href="/" className="hover:text-blue-200 transition-colors duration-300">Home</a>
-              <a href="/services" className="hover:text-blue-200 transition-colors duration-300">Services</a>
+              <a href="/smma" className="hover:text-blue-200 transition-colors duration-300">SMMA</a>
+              <a href="/websites" className="hover:text-blue-200 transition-colors duration-300">Websites</a>
               <a href="/about" className="hover:text-blue-200 transition-colors duration-300">About</a>
               <a href="/contact" className="hover:text-blue-200 transition-colors duration-300">Contact</a>
             </div>
