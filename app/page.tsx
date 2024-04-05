@@ -1,6 +1,5 @@
 'use client'
 
-import React, { useState } from 'react';
 import Navbar from '@/components/navbar';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
