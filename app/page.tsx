@@ -88,7 +88,7 @@ export default function Home() {
               transition={{ duration: 0.7}}
               className="mt-10"
             >
-              <Link href="/SMMA">
+              <Link href="/ads">
                 <button className="bg-white text-blue-600 font-bold py-2 px-6 rounded-lg transform transition duration-300 hover:bg-blue-600 hover:text-white">
                   Learn More
                 </button>
@@ -134,7 +134,7 @@ export default function Home() {
               transition={{ duration: 0.7, delay: 1.0 }}
               className="mt-4"
             >
-              <Link href="/about">
+              <Link href="/websites">
                 <button className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transform transition duration-300 hover:bg-white hover:text-blue-500">
                   Learn More
                 </button>
