@@ -1,7 +1,7 @@
-import Contact from "./contact"
+import Login from "./login"
 
 export default function Page() {
     return(
-        <Contact />
+        <Login />
     )
 }

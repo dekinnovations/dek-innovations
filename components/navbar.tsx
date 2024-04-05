@@ -33,7 +33,7 @@ export default function Navbar() {
           <Link href="/about"><span className="link-container text-lg">About</span></Link>
           <Link href="/ads"><span className="link-container text-lg">Ad Campaigns</span></Link>
           <Link href="/websites"><span className="link-container text-lg">Websites</span></Link>
-          <Link href="/contact"><span className="link-container text-lg">Contact</span></Link>
+          <Link href="/login"><span className="link-container text-lg">Sign In</span></Link>
           <Link href="/getQuote" className="ml-6">
             <button className="bg-blue-500 text-white px-4 py-2 rounded transition duration-300 transform hover:scale-105 hover:bg-white hover:text-blue-500 border border-blue-500">
               Get a Quote
@@ -47,7 +47,7 @@ export default function Navbar() {
           <Link href="/about"><span className="block py-2 cursor-pointer">About</span></Link>
           <Link href="/ads"><span className="block py-2 cursor-pointer">Ad Campaigns</span></Link>
           <Link href="/websites"><span className="block py-2 cursor-pointer">Websites</span></Link>
-          <Link href="/contact"><span className="block py-2 cursor-pointer">Contact</span></Link>
+          <Link href="/login"><span className="block py-2 cursor-pointer">Sign In</span></Link>
           <Link href="/getQuote" className="ml-6">
             <button className="bg-blue-500 text-white px-4 py-2 rounded transition duration-300 transform hover:scale-105 hover:bg-white hover:text-blue-500 border border-blue-500">
               Get a Quote

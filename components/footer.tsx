@@ -12,7 +12,7 @@ export default function Footer() {
             <a href="/about" className="hover:text-blue-200 transition-colors duration-300">About</a>
             <a href="/ads" className="hover:text-blue-200 transition-colors duration-300">Ad Campaigns</a>
             <a href="/websites" className="hover:text-blue-200 transition-colors duration-300">Websites</a>
-            <a href="#" className="hover:text-blue-200 transition-colors duration-300">Contact</a>
+            <a href="/login" className="hover:text-blue-200 transition-colors duration-300">Sign In</a>
             </div>
         </div>
         <div className="text-center mt-8">
