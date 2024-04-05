@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,7 +14,10 @@ export default function Navbar() {
   return (
     <nav className="bg-white text-blue-500 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="font-bold">DEK Innovations</div>
+      <div className="font-bold flex items-center">
+        <Image src="favicon.svg" alt="DEK Logo" width={50} height={50} className="mr-2"/>
+        DEK Innovations
+      </div>
 
         {/* Mobile menu toggle button */}
         <div className="md:hidden">
