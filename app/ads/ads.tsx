@@ -1,7 +1,7 @@
-import SMMA from "./smma"
+import ADS from "./ads"
 
 export default function Page() {
     return(
-        <SMMA />
+        <ADS />
     )
 }

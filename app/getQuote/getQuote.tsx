@@ -2,6 +2,7 @@
 
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import Navbar from '../../components/navbar';
+import Footer from '@/components/footer';
 import { motion } from 'framer-motion';
 
 interface AdditionalInfo {
@@ -189,24 +190,7 @@ export default function GetQuote() {
         </div>
       </div>
 
-      {/* Footer Section */}
-      <footer className="bg-gradient-to-r from-blue-400 to-blue-600 text-white mt-40 py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <h2 className="text-xl font-bold">DEK Innovations</h2>
-            <div className="flex space-x-4 mt-4 md:mt-0">
-              <a href="/" className="hover:text-blue-200 transition-colors duration-300">Home</a>
-              <a href="/smma" className="hover:text-blue-200 transition-colors duration-300">SMMA</a>
-              <a href="/websites" className="hover:text-blue-200 transition-colors duration-300">Websites</a>
-              <a href="/about" className="hover:text-blue-200 transition-colors duration-300">About</a>
-              <a href="/contact" className="hover:text-blue-200 transition-colors duration-300">Contact</a>
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <p>&copy; {new Date().getFullYear()} DEK Innovations. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
