@@ -11,14 +11,14 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <motion.div className="hero bg-gradient-to-r from-blue-400 to-blue-600 flex flex-col sm:flex-row justify-around items-center p-4 sm:p-12 text-white">
+      <motion.div className="hero bg-gradient-to-l from-blue-400 to-blue-600 flex flex-col sm:flex-row justify-around items-center p-4 sm:p-12 text-white">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <h1 className="text-5xl font-bold mb-4">Welcome to DEK Innovations</h1>
+          <h1 className="text-5xl font-bold mb-4 mt-20">Welcome to DEK Innovations</h1>
           <p className="text-xl mb-6">Expert Website Development and Social Media Marketing Solutions</p>
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -37,7 +37,7 @@ export default function Home() {
         <motion.img
           src="/images/hero.svg"
           alt="Laptop"
-          className="w-full md:w-1/2 lg:w-1/3"
+          className="w-full md:w-1/2 lg:w-1/3 mt-20 md:mt-0"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -46,7 +46,7 @@ export default function Home() {
       </motion.div>
       
       {/* SMMA */}
-      <div className="flex flex-col md:flex-row items-center justify-between w-full md:mt-40 px-4 md:px-8">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full md:mt-40 mb-80 px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -147,7 +147,7 @@ export default function Home() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="w-full md:w-1/2 flex justify-end mt-8 md:mt-0"
+          className="w-full md:w-1/2 flex justify-end mt-40 md:mt-0"
         >
           <img src="/images/laptop.svg" alt="Web Development" className="h-auto w-full lg:max-w-2xl" style={{ maxWidth: '100%', margin: 0, padding: 0 }} />
         </motion.div>
