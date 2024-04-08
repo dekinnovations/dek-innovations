@@ -35,7 +35,7 @@ export default function Home() {
         </motion.div>
 
         <motion.img
-          src="/images/hero.svg"
+          src="/images/SMMA.svg"
           alt="Laptop"
           className="w-full md:w-1/2 lg:w-1/3"
           initial={{ opacity: 0, x: 100 }}
@@ -54,7 +54,7 @@ export default function Home() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0 p-4"
         >
-          <img src="/images/SMMA.svg" alt="Social Media Marketing" className="object-cover w-5/6 h-full pt-32" />
+          <img src="/images/hero.svg" alt="Social Media Marketing" className="object-cover w-5/6 h-full pt-32 md:mr-20" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
