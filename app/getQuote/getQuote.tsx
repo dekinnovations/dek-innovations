@@ -186,7 +186,7 @@ export default function GetQuote() {
 
             <button type="submit" className="w-full bg-blue-500 text-white py-2 px-6 rounded-lg transition duration-300 hover:bg-blue-600">Submit</button>
             </form>
-          {submitted && <p className="text-green-500 text-center mt-4">Your request has been submitted. You will receive a quote in 1-2 business days.</p>}
+          {submitted && <p className="text-red-500 text-center mt-4">Sorry, there has been an error. Please email dylan@dekinnovations.com if you continue to have trouble. We apologize. </p>}
         </div>
       </div>
 
