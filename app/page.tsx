@@ -208,20 +208,26 @@ export default function Home() {
         </motion.div>
       </div>
 
-     {/* Contact Me Section with adjustments */}
-     <div className="flex items-center justify-center w-full min-h-screen">
-      <div className="flex flex-col justify-center items-center px-4 md:pl-8">
-        <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400 mb-6">Contact Us</h2>
-        <p className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 mb-8">Got a project in mind? Let's discuss and make it happen.</p>
-        <div className="space-y-4 w-full max-w-2lg">
-          <input type="text" placeholder="Your Name" className="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-300" />
-          <input type="email" placeholder="Your Email" className="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-300" />
-          <textarea placeholder="Your Message" className="w-full h-32 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
-          <button className="bg-gradient-to-r from-blue-500 to-blue-400 text-white font-bold py-2 px-6 rounded transition duration-300 transform hover:scale-105 hover:bg-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-blue-400 to-blue-500">Send Message</button>
+     {/* Contact Me Section with Professional Design Adjustments */}
+     <div className="w-full py-16 mt-40 mb-20">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="text-center text-blue-500 space-y-4"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold">Contact Us</h2>
+            <p className="md:text-lg">Got a project in mind? Let's discuss and make it happen.</p>
+            <div className="mt-6 space-y-4">
+              <p>Email: <a href="mailto:dylan@dekinnovations.com" className="underline hover:text-blue-300">dylan@dekinnovations.com</a></p>
+              <p>Call: <a href="tel:410-726-7290" className="underline hover:text-blue-300">410-726-7290</a></p>
+            </div>
+          </motion.div>
         </div>
       </div>
-    </div>
-
+      
     <Footer />
 
     </>
