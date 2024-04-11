@@ -194,7 +194,7 @@ export default function Ads() {
             >
               <Link href="/getQuote">
                 <button className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transform transition duration-300 hover:bg-white hover:text-blue-500">
-                  Learn More
+                  Get Started
                 </button>
               </Link>
             </motion.div>
