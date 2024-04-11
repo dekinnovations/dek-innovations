@@ -1,3 +1,4 @@
+
 'use client'
 
 import React from 'react';
@@ -6,80 +7,198 @@ import Footer from '@/components/footer';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-export default function ADS() {
+const headingVariants = {
+  hidden: { opacity: 0, y: -50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" }
+  },
+};
+
+const fadeInUpVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: "easeInOut" }
+  },
+};
+
+const scaleUpVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.5, ease: "easeOut" }
+  },
+};
+
+const slideInLeftVariants = {
+  hidden: { opacity: 0, x: -100 },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+    transition: { duration: 0.7, ease: "easeOut" }
+  },
+};
+
+export default function Ads() {
   return (
     <>
       <Navbar />
+      <motion.div
+        className="bg-gradient-to-r from-blue-400 to-blue-600 text-white pt-60 pb-40"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <div className="container mx-auto px-4">
+          <motion.h1
+            variants={headingVariants}
+            initial="hidden"
+            whileInView="visible"
+            className="text-5xl font-bold text-center"
+          >
+            Social Media Advertising
+          </motion.h1>
+          <motion.p
+            variants={headingVariants}
+            initial="hidden"
+            whileInView="visible"
+            className="text-xl mt-4 mb-20 text-center max-w-4xl mx-auto"
+          >
+            Boost your brand's online presence with targeted social media advertising on Facebook and Google.
+          </motion.p>
+        </div>
+      </motion.div>
 
-      {/* Hero Section - Emphasizing New Beginnings and Growth */}
-      <div className="hero pt-52 pb-52 bg-gradient-to-r from-blue-400 to-blue-600 flex flex-col justify-center items-center text-white p-4">
-        <motion.h1
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="text-6xl font-bold text-center" 
+      {/* Services Offered Section */}
+      <div className="container mx-auto px-4 py-12">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUpVariants}
+          className="text-center"
         >
-          Kickstart Your Brand's Journey with Us
-        </motion.h1>
-        <p className="text-xl mt-4 max-w-2xl text-center">
-          Harness the power of social media with our specialized strategies for barber shops and landscaping businesses, designed to propel your brand to new heights.
-        </p>
-      </div>
-
-      {/* Specialized Services for Niches */}
-      <div className="container mx-auto my-20">
-        <section className="text-center">
-          <h2 className="text-4xl font-bold text-blue-600 mb-6">Tailored Social Media Strategies</h2>
+          <h2 className="text-3xl font-bold mb-4 mt-40">Our Services</h2>
           <p className="text-lg max-w-3xl mx-auto">
-            Our services are crafted with your specific industry needs in mind, focusing on creating a strong online presence that resonates with your target audience.
+            From campaign strategy to ad creation and monitoring, learn how our comprehensive services can help your business grow.
           </p>
-        </section>
+        </motion.div>
+      </div>
 
-        {/* Barber Shops and Landscaping Businesses Sections */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-
-          {/* Barber Shops */}
-          <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-blue-700">Barber Shops</h3>
-            <p className="mt-4 text-blue-600">
-              Perfect your digital storefront with our expertly crafted campaigns, spotlighting your styling skills, promoting your unique atmosphere, and engaging your local community.
-            </p>
-            {/* Placeholder for an illustrative image or graphic */}
-          </div>
-
-          {/* Landscaping Businesses */}
-          <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-blue-700">Landscaping Businesses</h3>
-            <p className="mt-4 text-blue-600">
-              Showcase the artistry of your landscaping projects with our visual storytelling approach, designed to highlight your transformative results and expertise.
-            </p>
-            {/* Placeholder for an illustrative image or graphic */}
+      {/* How We Do It Section */}
+      <div className="bg-white py-12 mt-40">
+        <div className="container mx-auto px-4">
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={slideInLeftVariants}
+            className="text-4xl font-bold text-center mt-10"
+          >
+            How We Do It
+          </motion.h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.img
+              variants={fadeInUpVariants}
+              src="/images/ipad.svg"
+              alt="Strategy"
+              className="w-full h-auto"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            />
+            <motion.div
+              variants={fadeInUpVariants}
+              className="flex flex-col justify-center"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <p className="text-lg">
+                Our approach begins with a detailed analysis of your target audience and market conditions. We use this information to create highly optimized ads designed to capture and convert your ideal customer profiles.
+              </p>
+            </motion.div>
           </div>
         </div>
       </div>
 
-      {/* Call to Action for New Businesses */}
-      <div className="bg-blue-400 text-white py-20">
+      {/* Advanced Targeting Techniques */}
+      <div className="bg-blue-500 container mx-auto px-4 py-12 rounded-2xl mt-40 mb-20">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUpVariants}
+          className="text-center"
+        >
+          <h2 className="text-3xl font-bold mb-4 text-white">Advanced Targeting Techniques</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+            <motion.div 
+              variants={fadeInUpVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="p-6 shadow-lg rounded-lg bg-white"
+            >
+              <h3 className="font-bold text-xl mb-3">Demographic Targeting</h3>
+              <p>We refine your ads to engage with users based on age, location, interests, and more.</p>
+            </motion.div>
+            <motion.div 
+              variants={fadeInUpVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="p-6 shadow-lg rounded-lg bg-white"
+            >
+              <h3 className="font-bold text-xl mb-3">Behavioral Insights</h3>
+              <p>Our campaigns use behavioral data to reach customers based on their past actions and preferences.</p>
+            </motion.div>
+            <motion.div 
+              variants={fadeInUpVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="p-6 shadow-lg rounded-lg bg-white"
+            >
+              <h3 className="font-bold text-xl mb-3">Conversion Optimization</h3>
+              <p>We continuously test and optimize your ads to ensure the highest possible conversion rates.</p>
+            </motion.div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Call to Action Section */}
+      <div className="py-12 mt-60 mb-40">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Elevate Your Business?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Connect with us and discover how our tailored social media services can revolutionize your online presence, attract more clients, and showcase your brand’s uniqueness.
-          </p>
-          <Link href="/contact" className="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg">
-            Let's Get Started
-          </Link>
+          <motion.h2
+            variants={headingVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-3xl font-bold mb-4"
+          >
+            Ready to Grow Your Business?
+          </motion.h2>
+          <p className="text-xl mb-6">Contact us today to schedule a free consultation and see what we can do for you.</p>
+          <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 1.0 }}
+              className="mt-4"
+            >
+              <Link href="/getQuote">
+                <button className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transform transition duration-300 hover:bg-white hover:text-blue-500">
+                  Learn More
+                </button>
+              </Link>
+            </motion.div>
         </div>
-      </div>
-
-      {/* Placeholder for Future Testimonials */}
-      <div className="container mx-auto my-20">
-        <section className="text-center">
-          <h2 className="text-4xl font-bold text-blue-600 mb-6">What Our Future Clients Say</h2>
-          <p className="text-lg max-w-xl mx-auto">
-            We’re excited to build partnerships and create success stories. Your feedback and results will be our greatest endorsements.
-          </p>
-          {/* Placeholder for future testimonials */}
-        </section>
       </div>
 
       <Footer />

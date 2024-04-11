@@ -56,7 +56,7 @@ export default function About() {
       <Navbar />
 
       {/* About Us Hero Section */}
-      <div className="hero bg-gradient-to-r from-blue-400 to-blue-600 flex flex-col justify-center items-center sm:p-12 text-white">
+      <div className="hero bg-gradient-to-r from-blue-400 to-blue-600 flex flex-col justify-center items-center sm:p-20 text-white">
         <motion.h1 
           variants={textVariants}
           initial="hidden"
