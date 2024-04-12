@@ -142,7 +142,6 @@ export default function GetQuote() {
                 <input type="email" name="email" placeholder="Your Email" value={additionalInfo.email} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
                 <input type="tel" name="phone" placeholder="Your Phone Number" value={additionalInfo.phone} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
                 <input type="text" name="ideaName" placeholder="Idea Name" value={additionalInfo.ideaName} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
-                <textarea name="ideaDescription" placeholder="Describe your website idea" value={additionalInfo.ideaName} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
                 <input type="text" name="design" placeholder="Do you have a design or need one created?" value={additionalInfo.design} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
               </>
             )}
@@ -166,7 +165,6 @@ export default function GetQuote() {
                 <input type="email" name="email" placeholder="Your Email" value={additionalInfo.email} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
                 <input type="tel" name="phone" placeholder="Your Phone Number" value={additionalInfo.phone} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
                 <input type="text" name="ideaName" placeholder="Idea Name" value={additionalInfo.ideaName} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
-                <textarea name="ideaDescription" placeholder="Describe your webapp idea" value={additionalInfo.ideaName} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
                 <input type="text" name="design" placeholder="Do you have a design or need one created?" value={additionalInfo.design} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-lg focus:outline-none" />
               </>
             )}
