@@ -1,10 +1,29 @@
 "use client";
 
+// Websites.tsx
 import React from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+
+const fadeInVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: "easeInOut" }
+  },
+};
+
+const scaleUpVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.5, ease: "easeOut" }
+  },
+};
 
 export default function Websites() {
   return (
@@ -12,64 +31,96 @@ export default function Websites() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="hero pt-52 pb-52 bg-gradient-to-r from-blue-400 to-blue-600 flex flex-col justify-center items-center text-white p-4">
+      <motion.div
+        className="hero bg-gradient-to-r from-blue-400 to-blue-600 flex flex-col justify-center items-center text-white p-4 py-52"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={scaleUpVariants}
+      >
         <motion.h1
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="text-6xl font-bold text-center" 
+          className="text-6xl font-bold text-center"
+          variants={fadeInVariants}
         >
-          Elevate Your Online Presence with Our Website Solutions
+          Elevate Your Online Presence
         </motion.h1>
-        <p className="text-xl mt-4 max-w-2xl text-center">
-          From hand-coded websites to WordPress, Wix, Shopify, and more, we create and redesign all kinds of websites to help you gain more clients and generate leads.
-        </p>
-      </div>
+        <motion.p
+          className="text-xl mt-4 max-w-2xl text-center"
+          variants={fadeInVariants}
+        >
+          Discover our range of custom website solutions, from development to SEO strategies that enhance visibility and lead generation.
+        </motion.p>
+      </motion.div>
 
-      {/* Website Creation and Redesign Section */}
+      {/* Service Showcase */}
       <div className="container mx-auto my-20">
-        <section className="text-center">
-          <h2 className="text-4xl font-bold text-blue-600 mb-6">Website Creation and Redesign</h2>
+        <motion.section
+          className="text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInVariants}
+        >
+          <h2 className="text-4xl font-bold text-blue-600 mb-6">Our Web Services</h2>
           <p className="text-lg max-w-3xl mx-auto">
-            Our expert team specializes in creating responsive, high-performing, and visually captivating websites that are custom-tailored to your business objectives. Whether you're looking to launch a new website, redesign an existing one, or develop a powerful web application, our comprehensive services cover all your needs.
+            Whether launching a new site or revitalizing an old one, we tailor our services to meet your digital needs effectively.
           </p>
-        </section>
+        </motion.section>
 
-        {/* Website Platforms Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-
-          {/* Hand-Coded Websites */}
+        {/* Dynamic Grid Section */}
+        <motion.div
+          className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInVariants}
+        >
+          {/* Custom Web Development */}
           <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-blue-700">Hand-Coded Websites</h3>
+            <h3 className="text-2xl font-bold text-blue-700">Custom Development</h3>
             <p className="mt-4 text-blue-600">
-              We create bespoke websites from scratch, ensuring a unique and personalized online presence that stands out from the crowd.
+              Full-stack development services tailored to create highly functional and aesthetically pleasing websites.
             </p>
-            {/* Placeholder for an illustrative image or graphic */}
           </div>
 
-          {/* WordPress, Wix, Shopify, and More */}
+          {/* E-commerce Solutions */}
           <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-blue-700">WordPress, Wix, Shopify, and More</h3>
+            <h3 className="text-2xl font-bold text-blue-700">E-commerce Solutions</h3>
             <p className="mt-4 text-blue-600">
-              We are proficient in a variety of platforms, allowing us to create or redesign your website using the technology that best suits your needs.
+              Enhance your online store with custom Shopify or WooCommerce solutions that drive sales and improve customer experience.
             </p>
-            {/* Placeholder for an illustrative image or graphic */}
           </div>
-        </div>
+
+          {/* SEO and Marketing */}
+          <div className="bg-blue-100 p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-bold text-blue-700">SEO and Marketing</h3>
+            <p className="mt-4 text-blue-600">
+              Optimize your site for search engines and increase your visibility with our targeted marketing strategies.
+            </p>
+          </div>
+        </motion.div>
       </div>
 
-      {/* Lead Generation and SEO Section */}
-      <div className="bg-blue-400 text-white py-20">
+      {/* CTA Section */}
+      <motion.div
+        className="bg-blue-400 text-white py-20"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInVariants}
+      >
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Lead Generation and SEO</h2>
+          <h2 className="text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Our websites are designed not just to look great, but also to serve as powerful tools for lead generation. We also implement SEO best practices to ensure your website ranks high on search engine results, attracting more potential clients.
+            Get in touch today to discuss how we can help bring your website vision to life.
           </p>
-          <Link href="/contact" className="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg">
-            Let's Get Started
+          <Link href="/contact">
+            <button className="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg">
+              Contact Us
+            </button>
           </Link>
         </div>
-      </div>
+      </motion.div>
 
       <Footer />
     </>
