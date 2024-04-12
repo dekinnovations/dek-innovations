@@ -54,7 +54,7 @@ export default function Home() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0 p-4"
         >
-          <img src="/images/ad.svg" alt="Social Media Marketing" className="object-cover w-5/6 h-full pt-32 md:mr-20" />
+          <img src="/images/iphone.svg" alt="Social Media Marketing" className="object-cover w-full h-full pt-32" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
