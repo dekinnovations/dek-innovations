@@ -103,7 +103,7 @@ export default function Ads() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.img
               variants={fadeInUpVariants}
-              src="/images/iPad.svg"
+              src="/images/strategy.svg"
               alt="Strategy"
               className="w-full h-auto"
               initial="hidden"
@@ -117,7 +117,7 @@ export default function Ads() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <p className="text-lg">
+              <p className="text-lg px-20">
                 Our approach begins with a detailed analysis of your target audience and market conditions. We use this information to create highly optimized ads designed to capture and convert your ideal customer profiles.
               </p>
             </motion.div>
