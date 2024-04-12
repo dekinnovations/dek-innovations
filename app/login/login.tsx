@@ -27,7 +27,7 @@ export default function Login() {
           animate="visible"
           className="text-5xl font-bold mb-24 mt-40 text-center"
         >
-          This Page is Not Yet Available
+          This Page is COming Soo n
         </motion.h1>
       </div>
 

@@ -120,7 +120,7 @@ export default function About() {
       </div>
 
       {/* Values Section */}
-      <div className="container mx-auto px-4 py-12 mt-40">
+      <div className="container mx-auto px-4 py-12 mt-40 mb-40">
         <motion.h2 
           initial="hidden"
           whileInView="visible"
