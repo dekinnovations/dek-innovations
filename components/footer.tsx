@@ -7,6 +7,18 @@ export default function Footer() {
               <h2 className="text-xl font-bold">DEK Innovations</h2>
               <p className="text-md mt-2">Innovating the future, one project at a time.</p>
             </div>
+            {/* Social Media Links */}
+            <div className="flex justify-center items-center space-x-3">
+              <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer">
+                <img src="/images/instagram.svg" alt="Instagram" className="hover:scale-110 transition-transform w-6 h-6"/>
+              </a>
+              <a href="https://www.facebook.com/your_facebook_page" target="_blank" rel="noopener noreferrer">
+                <img src="/images/facebook.svg" alt="Facebook" className="hover:scale-110 transition-transform w-6 h-6"/>
+              </a>
+              <a href="https://www.x.com/your_x_page" target="_blank" rel="noopener noreferrer">
+                <img src="/images/x.svg" alt="X" className="hover:scale-110 transition-transform w-6 h-6"/>
+              </a>
+            </div>
             <div className="flex space-x-4">
               <a href="/" className="hover:text-blue-200 transition-colors duration-300">Home</a>
               <a href="/about" className="hover:text-blue-200 transition-colors duration-300">About</a>
@@ -14,23 +26,12 @@ export default function Footer() {
               <a href="/websites" className="hover:text-blue-200 transition-colors duration-300">Websites</a>
               <a href="/login" className="hover:text-blue-200 transition-colors duration-300">Sign In</a>
             </div>
-            {/* Social Media Links */}
-            <div className="flex space-x-4">
-              <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer">
-                <img src="/images/instagram.svg" alt="Instagram" className="hover:scale-110 transition-transform" style={{ maxWidth: '30%', margin: 0, padding: 0 }}/>
-              </a>
-              <a href="https://www.facebook.com/your_facebook_page" target="_blank" rel="noopener noreferrer">
-                <img src="/images/facebook.svg" alt="Facebook" className="hover:scale-110 transition-transform" style={{ maxWidth: '30%', margin: 0, padding: 0 }}/>
-              </a>
-              <a href="https://www.x.com/your_x_page" target="_blank" rel="noopener noreferrer">
-                <img src="/images/x.svg" alt="X" className="hover:scale-110 transition-transform" style={{ maxWidth: '30%', margin: 0, padding: 0 }}/>
-              </a>
-            </div>
           </div>
           <div className="text-center mt-8">
             <p>&copy; {new Date().getFullYear()} DEK Innovations. All rights reserved.</p>
           </div>
         </div>
+        
       </footer>
     )
   }
