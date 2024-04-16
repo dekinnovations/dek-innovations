@@ -113,7 +113,7 @@ export default function Websites() {
           <div className="md:w-1/2">
             <h2 className="text-4xl font-bold mb-6">Why Choose Us</h2>
             <p className="text-xl mb-8">
-              Learn why our bespoke web solutions are trusted by businesses across various industries to improve their online engagement and operational efficiency.
+            At DEK Innovations, we enhance our value by embracing novel approaches and integrating AI into our strategies, ensuring that businesses not only keep pace but lead in their markets.
             </p>
           </div>
           <div className="md:w-3/5 flex justify-center mt-8 md:mt-0">

@@ -86,7 +86,8 @@ export default function About() {
         >
           <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
           <p className="text-lg max-w-3xl mx-auto">
-            At DEK Innovations, our mission is to deliver cutting-edge software solutions that drive growth, efficiency, and innovation for businesses around the globe.
+            
+At DEK Innovations, our mission is to deliver cutting-edge software solutions and impactful social media advertising strategies that drive growth, efficiency, and innovation for businesses around the globe.
           </p>
         </motion.div>
       </div>
@@ -112,7 +113,7 @@ export default function About() {
                 <h3 className="text-2xl font-bold">Dylan E. Keller</h3>
                 <p className="text-lg text-gray-600">Founder & Lead Developer</p>
                 <p className="mt-4 max-w-xl mx-auto">
-                Briefly introduce yourself here. Highlight your experience, vision for the company, and any unique insights you bring to your role. This personal touch can help visitors connect with your brand on a more personal level.
+                Dylan Keller is the founder of DEK Innovations, a boutique agency specializing in website creation and social media advertising. With extensive experience in digital marketing, he is committed to using his expertise to help businesses expand their online presence. Dylan envisions growing DEK Innovations into a major agency that supports the growth of thousands of businesses.
                 </p>
             </div>
           </motion.div>

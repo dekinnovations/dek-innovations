@@ -67,7 +67,7 @@ export default function Ads() {
             whileInView="visible"
             className="text-xl mt-4 mb-20 text-center max-w-4xl mx-auto"
           >
-            Boost your brand's online presence with targeted social media advertising on Facebook and Google.
+            Boost your brand's online presence with targeted social media advertising on Facebook, Instagram, and Google.
           </motion.p>
         </div>
       </motion.div>
