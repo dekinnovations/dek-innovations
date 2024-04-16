@@ -12,7 +12,16 @@ const textSlideUpFadeInVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: "easeInOut" }
+    transition: { duration: 0.6, ease: "easeInOut" }
+  },
+};
+
+const slideInLeftVariants = {
+  hidden: { opacity: 0, x: -100 },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+    transition: { duration: 0.7, ease: "easeOut" }
   },
 };
 
@@ -24,7 +33,7 @@ export default function Websites() {
       {/* Hero Section */}
       <div className="hero bg-gradient-to-r from-blue-400 to-blue-600 flex flex-col justify-center items-center text-white p-4 py-52">
         <motion.h1
-          className="text-6xl font-bold text-center"
+          className="text-5xl font-bold text-center"
           variants={textSlideUpFadeInVariants}
           initial="hidden"
           whileInView="visible"
@@ -44,15 +53,15 @@ export default function Websites() {
       </div>
 
       {/* Service Showcase */}
-      <div className="container mx-auto my-20">
+      <div className="container mx-auto my-20 mt-60">
         <motion.section
           className="text-center"
-          variants={textSlideUpFadeInVariants}
+          variants={slideInLeftVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-blue-600 mb-6">Our Web Services</h2>
+          <h2 className="text-4xl font-bold mb-6">Our Web Services</h2>
           <p className="text-lg max-w-3xl mx-auto">
             Whether launching a new site or revitalizing an old one, we tailor our services to meet your digital needs effectively.
           </p>
@@ -94,7 +103,7 @@ export default function Websites() {
 
       {/* Feature Highlight Section */}
       <motion.div
-        className="bg-blue-500 text-white py-20"
+        className="bg-gradient-to-l from-blue-400 to-blue-600 text-white py-20 mt-60"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -107,15 +116,15 @@ export default function Websites() {
               Learn why our bespoke web solutions are trusted by businesses across various industries to improve their online engagement and operational efficiency.
             </p>
           </div>
-          <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
-            <img src="/images/feature-highlight.jpg" alt="Feature Highlight" className="max-w-md rounded-lg shadow-xl"/>
+          <div className="md:w-3/5 flex justify-center mt-8 md:mt-0">
+            <img src="/images/full-laptop.svg" alt="Feature Highlight"/>
           </div>
         </div>
       </motion.div>
 
       {/* CTA Section */}
       <motion.div
-        className="text-blue-600 py-20"
+        className="py-20 mt-40 mb-20"
         variants={textSlideUpFadeInVariants}
         initial="hidden"
         whileInView="visible"
@@ -126,11 +135,11 @@ export default function Websites() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Get in touch today to discuss how we can help bring your website vision to life.
           </p>
-          <Link href="/contact">
-            <button className="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg">
-              Contact Us
-            </button>
-          </Link>
+          <Link href="/getQuote">
+              <button className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transform transition duration-300 hover:bg-white hover:text-blue-500">
+                Get Started
+              </button>
+            </Link>
         </div>
       </motion.div>
 
