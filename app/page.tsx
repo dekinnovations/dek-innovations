@@ -216,7 +216,7 @@ export default function Home() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-center text-blue-500 space-y-4"
+            className="text-center text-blue-600 space-y-4"
           >
             <h2 className="text-4xl md:text-5xl font-bold">Contact Us</h2>
             <p className="md:text-lg">Got a project in mind? Let's discuss and make it happen.</p>
