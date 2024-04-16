@@ -9,13 +9,13 @@ export default function Footer() {
             </div>
             {/* Social Media Links */}
             <div className="flex justify-center items-center space-x-3">
-              <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer">
+              <a target="_blank" rel="noopener noreferrer">
                 <img src="/images/instagram.svg" alt="Instagram" className="hover:scale-110 transition-transform w-6 h-6"/>
               </a>
-              <a href="https://www.facebook.com/your_facebook_page" target="_blank" rel="noopener noreferrer">
+              <a target="_blank" rel="noopener noreferrer">
                 <img src="/images/facebook.svg" alt="Facebook" className="hover:scale-110 transition-transform w-6 h-6"/>
               </a>
-              <a href="https://www.x.com/your_x_page" target="_blank" rel="noopener noreferrer">
+              <a target="_blank" rel="noopener noreferrer">
                 <img src="/images/x.svg" alt="X" className="hover:scale-110 transition-transform w-6 h-6"/>
               </a>
             </div>
